@@ -3,11 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "5d2b6012b851837b53c3cee581b8a860",
+const RESOURCES = {"flutter_bootstrap.js": "3e4eb4b4ed190b6466e53ec241ed09d5",
 "version.json": "5ef471df02f914ab3c8f8df4f183ae3a",
 "index.html": "98a4affda8df38247d3bfc25fc6f1c95",
 "/": "98a4affda8df38247d3bfc25fc6f1c95",
-"main.dart.js": "3030b27dffbded638688b22755d5c82b",
+"main.dart.js": "cdff76eb61d755fe291826c881f72af5",
 "flutter.js": "888483df48293866f9f41d3d9274a779",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
@@ -21,7 +21,7 @@ const RESOURCES = {"flutter_bootstrap.js": "5d2b6012b851837b53c3cee581b8a860",
 "assets/AssetManifest.bin.json": "c16ba8cd110185020a3e36aa80d32871",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "assets/AssetManifest.bin": "232a33f3a110b200bb7c0774382fb5d4",
-"assets/fonts/MaterialIcons-Regular.otf": "fe1749f689f0bbbb353fbf8f46ce4644",
+"assets/fonts/MaterialIcons-Regular.otf": "b4336643588ab740f24a6620a68b75fe",
 "assets/assets/img/taploop_logo.jpg": "00894f44baf45cd540cc8726f3be8f8e",
 "canvaskit/skwasm.js": "1ef3ea3a0fec4569e5d531da25f34095",
 "canvaskit/skwasm_heavy.js": "413f5b2b2d9345f37de148e2544f584f",
