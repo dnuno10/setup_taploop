@@ -27055,8 +27055,8 @@ if(A.wu(a))return a
 s=a==null?null:J.c2(a)
 s=A.pT(s==null?"":s,null)
 return s==null?b:s},
-aQ_(a){var s,r,q,p,o,n,m,l,k,j,i=t.kc.a(a.h(0,"cards"))
-if(i==null)i=B.kq
+aQ_(a){var s,r,q,p,o,n,m,l,k=t.kc.a(a.h(0,"cards"))
+if(k==null)k=B.kq
 J.c2(a.h(0,"id"))
 s=a.h(0,"order_number")
 s=s==null?null:J.c2(s)
@@ -27064,8 +27064,8 @@ if(s==null)s=""
 r=a.h(0,"status")
 r=r==null?null:J.c2(r)
 if(r==null)r="pending_setup"
-q=J.b4(i)
-A.aTO(a.h(0,"quantity"),q.gF(i))
+q=J.b4(k)
+A.aTO(a.h(0,"quantity"),q.gF(k))
 p=a.h(0,"setup_token")
 if(p!=null)J.c2(p)
 A.ch(a.h(0,"stripe_session_id"))
@@ -27079,12 +27079,12 @@ p=A.ch(a.h(0,"company_name"))
 o=A.ch(a.h(0,"company_logo_url"))
 n=A.ch(a.h(0,"brand_primary_color"))
 m=A.ch(a.h(0,"proposal_contact_method"))
-l=A.ch(a.h(0,"proposal_contact_email"))
-k=A.ch(a.h(0,"proposal_contact_whatsapp"))
-j=A.ch(a.h(0,"proposal_notes"))
-q=q.e7(i,new A.agE(),t.rx)
+A.ch(a.h(0,"proposal_contact_email"))
+A.ch(a.h(0,"proposal_contact_whatsapp"))
+l=A.ch(a.h(0,"proposal_notes"))
+q=q.e7(k,new A.agE(),t.rx)
 q=A.a4(q,q.$ti.i("aq.E"))
-return new A.O4(s,r,p,o,n,m,l,k,j,q)},
+return new A.O4(s,r,p,o,n,m,l,q)},
 aDp(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=a.b
 if(f==null)f=""
 s=a.c
@@ -27114,17 +27114,15 @@ if(h==null)h=""
 g=a.CW
 if(g==null)g=""
 return new A.u5(a.a,f,s,r,q,p,o,n,m,l,k,j,i,h,g,a.ax)},
-O4:function O4(a,b,c,d,e,f,g,h,i,j){var _=this
+O4:function O4(a,b,c,d,e,f,g,h){var _=this
 _.b=a
 _.c=b
 _.as=c
 _.at=d
 _.ax=e
 _.ay=f
-_.ch=g
-_.CW=h
-_.cx=i
-_.cy=j},
+_.cx=g
+_.cy=h},
 agE:function agE(){},
 agG:function agG(){},
 agF:function agF(){},
@@ -88691,14 +88689,10 @@ k=l.ax
 m.ch=k==null?"#FF5A3D":k
 k=l.ay
 m.cy=k==null?"whatsapp":k
-k=l.ch
-m.db=k==null?"":k
-k=l.CW
-if(k==null)k=""
-m.dx=k
-r=l.cx
-m.dy=r==null?"":r
-m.RC(k)
+m.dx=m.db=""
+k=l.cx
+m.dy=k==null?"":k
+m.RC("")
 for(k=l.cy,r=k.length,q=m.e,p=m.f,o=t.am,n=0;n<k.length;k.length===r||(0,A.H)(k),++n){s=k[n]
 q.m(0,s.e.a,A.aDp(s.e,s.a))
 p.m(0,s.e.a,new A.br(null,o))}if(B.b.t(A.b(["submitted","pending_design_proposal","in_production","completed"],t.s),l.c))m.at=5
@@ -88717,16 +88711,17 @@ m.ay=k==null?m.ay:k
 k=l.ax
 m.ch=k==null?m.ch:k
 k=l.ay
-m.cy=k==null?m.cy:k
-k=l.ch
-m.db=k==null?m.db:k
-k=l.CW
-if(k==null)k=m.dx
-m.dx=k
-s=l.cx
-m.dy=s==null?m.dy:s
-m.RC(k)
-for(l=l.cy,k=l.length,s=m.f,r=this.c,m=m.e,q=t.am,p=0;p<l.length;l.length===k||(0,A.H)(l),++p){o=l[p]
+if(k==null)k=m.cy
+m.cy=k
+m.db=k==="email"?m.db:""
+k=k==="whatsapp"
+s=k?m.dx:""
+m.dx=s
+r=l.cx
+m.dy=r==null?m.dy:r
+if(k)m.RC(s)
+else{m.fr="+52"
+m.fx=""}for(l=l.cy,k=l.length,s=m.f,r=this.c,m=m.e,q=t.am,p=0;p<l.length;l.length===k||(0,A.H)(l),++p){o=l[p]
 if(!r||!m.ao(o.e.a)){n=o.e
 m.m(0,n.a,A.aDp(n,o.a))}n=o.e.a
 if(s.h(0,n)==null)s.m(0,n,new A.br(null,q))}},
